@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-deep-teal: #0A4A4A;
+    --color-deep-teal-dark: #062E2E;
+    --color-deep-teal-light: #135E5E;
+    --color-warm-gold: #D4A747;
+    --color-warm-gold-light: #F0C96F;
+    --color-warm-gold-dark: #B58A2B;
+    --color-cream-white: #FDF8F0;
+    --color-charcoal: #2C2C2C;
+    --color-soft-sage: #8BA888;
+    --color-burnt-orange: #C77D4A;
+    --color-off-white: #F5F0E8;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #FDF8F0;
+    color: #2C2C2C;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-title {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom African Geometric Pattern and Node Animations */
+.bg-african-pattern {
+  background-image: radial-gradient(#D4A747 0.75px, transparent 0.75px), radial-gradient(#8BA888 0.75px, #0A4A4A 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.bg-african-subtle-light {
+  background-image: radial-gradient(rgba(10, 74, 74, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-gold {
+  background-image: linear-gradient(to right, rgba(212, 167, 71, 0.08) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(212, 167, 71, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-grid-teal {
+  background-image: linear-gradient(to right, rgba(10, 74, 74, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(10, 74, 74, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Custom glowing and floating effects */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.06); }
+}
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+/* Glassmorphism subtle utility */
+.glass-teal {
+  background: rgba(10, 74, 74, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(253, 248, 240, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+

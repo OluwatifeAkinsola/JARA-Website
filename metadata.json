@@ -1,0 +1,7 @@
+{
+  "name": "Jara - AI Procurement Intelligence",
+  "description": "AI-powered procurement intelligence platform built for Nigeria and the African market.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
